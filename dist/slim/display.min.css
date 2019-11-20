@@ -1,0 +1,8 @@
+/**
+ * @project        grid-system
+ * @author         www
+ * @build          Wed, Nov 20, 2019 9:45 PM ET
+ * @release        9e9f1c6f37057f074183cb1a0754b3f6398c1973 [master]
+ * @copyright      Copyright (c) 2019, All Rights Reserved.
+ */
+.show{display:block}.hide,.show-none{display:none}.show-block{display:block}.show-inline{display:inline}.show-inline-block{display:inline-block}.show-flex{display:-ms-flexbox;display:flex}.show-inline-flex{display:-ms-inline-flexbox;display:inline-flex}.show-table{display:table}.show-table-row{display:table-row}.show-table-cell{display:table-cell}.visible{visibility:visible}.hidden{visibility:hidden}

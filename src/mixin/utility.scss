@@ -1,0 +1,14 @@
+@import 'common';
+@import 'media';
+
+/// --------------------------------------------------
+/// Utility
+/// --------------------------------------------------
+
+// @include make-utility;
+@mixin make-utility($name, $prop, $unit:1px, $breakpoint-name:'', $increase:10, $start:0, $end:10) {
+	@for $i from $start through $end {
+		$num: $i * $increase;
+		.#{$breakpoint-name}#{$name}-#{$num} { #{$prop}: $num * $unit; }
+	}
+}

@@ -1,0 +1,19 @@
+@import '../../global';
+@import '../../mixin/font';
+
+/// --------------------------------------------------
+/// Mixin
+/// --------------------------------------------------
+
+// @include make-basis;
+@mixin make-basis($breakpoint-name:'') {
+  @include make-font-size($breakpoint-name);
+  @include make-font-weight($breakpoint-name);
+}
+
+/// --------------------------------------------------
+/// Essential
+/// --------------------------------------------------
+
+@include make-basis;
+@include make-breakpoints;

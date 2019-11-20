@@ -1,0 +1,20 @@
+@import '../../global';
+@import '../../mixin/display';
+
+/// --------------------------------------------------
+/// Mixin
+/// --------------------------------------------------
+
+@mixin make-basis($breakpoint-name:'') {
+  
+  @include make-display($breakpoint-name);
+  @include make-visible($breakpoint-name);
+  
+}
+
+/// --------------------------------------------------
+/// Essential
+/// --------------------------------------------------
+
+@include make-basis;
+@include make-breakpoints;

@@ -1,0 +1,35 @@
+@import '../../global';
+@import '../../mixin/utility';
+
+/// --------------------------------------------------
+/// Mixin
+/// --------------------------------------------------
+
+// @include make-basis;
+@mixin make-basis($breakpoint-name:'') {
+
+	// px
+	@include make-utility(w, width, 1px, $breakpoint-name);
+	@include make-utility(h, height, 1px, $breakpoint-name);
+	@include make-utility(min-w, min-width, 1px, $breakpoint-name);
+	@include make-utility(min-h, min-height, 1px, $breakpoint-name);
+
+	// %
+	@include make-utility(pw, width, 1%, $breakpoint-name);
+	@include make-utility(ph, height, 1%, $breakpoint-name);
+	@include make-utility(min-pw, min-width, 1%, $breakpoint-name);
+	@include make-utility(min-ph, min-height, 1%, $breakpoint-name);
+
+	// vw, vh
+	@include make-utility(vw, width, 1vw, $breakpoint-name);
+	@include make-utility(vh, height, 1vh, $breakpoint-name);
+	@include make-utility(min-vw, min-width, 1vw, $breakpoint-name);
+	@include make-utility(min-vh, min-height, 1vh, $breakpoint-name);
+
+}
+
+/// --------------------------------------------------
+/// Slim
+/// --------------------------------------------------
+
+@include make-basis;
