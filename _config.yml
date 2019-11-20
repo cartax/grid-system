@@ -1,1 +1,5 @@
 theme: jekyll-theme-cayman
+title: Grid System 2(Beta)
+description: Grid System 2(Beta) is a responsive and desktop project and is based on sass and typescript.
+show_downloads: true
+google_analytics: UA-152942812-2
